@@ -1,0 +1,186 @@
+html {
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .header--nav {
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav .header--nav a {
+    margin-right: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav .header--nav .nav--dots {
+    background-image: url(./assets/apps_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .header--nav .nav--profile img {
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+/** Main **/
+
+main {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/** First section **/
+
+main .main--logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+main .main--logo img {
+    width: 272px;
+    height: 92px;
+}
+
+/** Second Section **/
+
+main .main--input {
+    position: relative;
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+
+main .main__input-container {
+    width: 525px;
+    max-width: 584px;
+    border-radius: 100px;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .main__input-container input {
+    width: 450px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+main .main__input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main--input .search-icon {
+    width: 18px;
+    height: 18px;
+    background: url(./assets/lupa.jpg) center/contain no-repeat;
+}
+
+main .main--input .micro-icon {
+    width: 18px;
+    height: 18px;
+    background: url(./assets/google-mic-seeklogo.com.svg) center/contain no-repeat;
+    cursor: pointer;
+}
+
+/** Third Section **/
+
+main .main--buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main--buttons div {
+    display: inline-block;
+}
+
+main .main--buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 7px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main--buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: #000001;
+    color: #222;
+}
+
+/** Footer **/
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer--left {
+    justify-self: left;
+}
+
+footer .footer--right {
+    justify-self: right;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
